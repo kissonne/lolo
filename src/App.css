@@ -1,0 +1,48 @@
+/* Основные стили приложения */
+.app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Стили для MoviePage (страницы фильма) */
+.movie-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.movie-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.movie-poster {
+    max-width: 400px;
+    margin: 0 auto 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.movie-details {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .movie-page {
+        padding: 10px;
+    }
+    
+    .movie-poster {
+        max-width: 100%;
+    }
+}
